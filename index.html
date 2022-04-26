@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Contact form</title>
+    <style>
+      html,
+      body {
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 15px;
+        background-color: rgb(149, 187, 209);
+      }
+      form {
+        border: 5px solid #1478b3;
+      }
+      .formcontainer {
+        text-align: left;
+        margin: 24px 50px 12px;
+      }
+      .textinp {
+        width: 100%;
+        padding: 20px 8px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 3px solid rgb(55, 169, 223);
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      button {
+        background-color: #0ea0b9;
+        color: white;
+        padding: 14px 0;
+        margin: 14px 0;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 18px;
+      }
+      .container {
+        padding: 16px 0;
+        text-align: left;
+      }
+      .forgotpassword {
+        float: right;
+        padding-top: 0;
+        padding-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <h1>Contact Us</h1>
+      <!-- outer div start-->
+      <div class="formcontainer">
+        <hr />
+        <!-- form control div start -->
+        <div class="container">
+          <label for="fullname"><strong>Fullname</strong></label>
+          <input
+            type="text"
+            placeholder="Enter fullname"
+            name="fullname"
+            id="fullname"
+            class="textinp"
+          />
+          <label for="email"><strong>Email</strong></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            class="textinp @"
+          />
+          <label for="phone number"><strong>Phone Number</strong></label>
+          <input
+            type="text"
+            placeholder="Enter phone number"
+            name="phone number"
+            id="number"
+            class="textinp"
+          />
+          <label for="website"><strong>website</strong></label>
+          <input
+            type="text"
+            placeholder="Enter website"
+            name="website"
+            id="website"
+            class="textinp"
+          />
+          <label for="message"><strong>Message</strong></label>
+          <input
+            type="text"
+            placeholder="Your Message"
+            name="message"
+            id="message"
+            class="textinp"
+          />
+        </div>
+        <!--form control div ends-->
+        <button type="submit">submit</button>
+      </div>
+      <!--Outer div ends-->
+    </form>
+  </body>
+</html>
